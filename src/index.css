@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-brand-bg: #FAFAF8;
+  --color-brand-text: #111827;
+  --color-brand-border: #E7E5E4;
+  --color-brand-primary: #B36B7A;
+  --color-brand-primary-hover: #9E5A69;
+  --color-brand-secondary: #6F8F7B;
+
+  /* Stone scale */
+  --color-stone-50: #FAFAF8;
+  --color-stone-100: #F5F3EF;
+  --color-stone-200: #E7E5E4;
+  --color-stone-300: #D6D3D1;
+  --color-stone-400: #A8A29E;
+  --color-stone-500: #78716C;
+  --color-stone-600: #57534E;
+  --color-stone-700: #44403C;
+  --color-stone-800: #292524;
+  --color-stone-900: #1C1917;
+
+  /* Sage */
+  --color-sage-50: #F2F5F0;
+  --color-sage-100: #E0E7DB;
+  --color-sage-200: #C5D3BC;
+  --color-sage-300: #A3B898;
+  --color-sage-400: #6F8F7B;
+  --color-sage-500: #5A7A66;
+  --color-sage-600: #476350;
+
+  /* Rose */
+  --color-rose-50: #FBF5F6;
+  --color-rose-100: #F3E4E7;
+  --color-rose-200: #E5C7CD;
+  --color-rose-300: #D4A3AD;
+  --color-rose-400: #B36B7A;
+  --color-rose-500: #9E5A69;
+  --color-rose-600: #844A58;
+
+  /* Fonts */
+  --font-serif: "Cormorant Garamond", "游明朝", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --font-sans: "Inter", "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+}
+
+/* ── Base ── */
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-brand-text);
+  background-color: var(--color-brand-bg);
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "palt";
+}
+
+/* ── Headings ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--color-brand-text);
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  margin: 0;
+}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.625rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.125rem; }
+
+@media (min-width: 768px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.375rem; }
+}
+
+/* ── Text ── */
+p { margin: 0; color: var(--color-stone-600); line-height: 1.9; }
+small { font-size: 0.8125rem; color: var(--color-stone-400); }
+a { color: inherit; text-decoration: none; }
+
+/* ── Focus ── */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--color-rose-100);
+  color: var(--color-brand-text);
+}

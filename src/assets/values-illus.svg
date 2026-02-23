@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <!-- Outer decorative rings -->
+  <circle cx="120" cy="120" r="112" stroke="#C5D3BC" stroke-width="0.8" opacity="0.32"/>
+  <circle cx="120" cy="120" r="92"  stroke="#C5D3BC" stroke-width="0.5" opacity="0.22"/>
+
+  <!-- 5 petals (72° apart) — center 60px above (120,120) → apex at (120,60) -->
+  <!-- Petal 1: 0° (top) -->
+  <ellipse cx="120" cy="62" rx="22" ry="50" fill="#6F8F7B" opacity="0.18"/>
+  <!-- Petal 2: 72° -->
+  <ellipse cx="120" cy="62" rx="22" ry="50" fill="#A3B898" opacity="0.15" transform="rotate(72  120 120)"/>
+  <!-- Petal 3: 144° -->
+  <ellipse cx="120" cy="62" rx="22" ry="50" fill="#6F8F7B" opacity="0.15" transform="rotate(144 120 120)"/>
+  <!-- Petal 4: 216° -->
+  <ellipse cx="120" cy="62" rx="22" ry="50" fill="#B36B7A" opacity="0.12" transform="rotate(216 120 120)"/>
+  <!-- Petal 5: 288° -->
+  <ellipse cx="120" cy="62" rx="22" ry="50" fill="#D4A3AD" opacity="0.12" transform="rotate(288 120 120)"/>
+
+  <!-- Inner concentric rings -->
+  <circle cx="120" cy="120" r="36" fill="#E0E7DB" opacity="0.48"/>
+  <circle cx="120" cy="120" r="24" fill="#C5D3BC" opacity="0.32"/>
+  <circle cx="120" cy="120" r="13" fill="#A3B898" opacity="0.38"/>
+  <circle cx="120" cy="120" r="5.5" fill="#6F8F7B" opacity="0.55"/>
+
+  <!-- Petal tip dots -->
+  <circle cx="120" cy="12" r="3"   fill="#6F8F7B" opacity="0.5"/>
+  <circle cx="120" cy="12" r="3"   fill="#A3B898" opacity="0.44" transform="rotate(72  120 120)"/>
+  <circle cx="120" cy="12" r="3"   fill="#6F8F7B" opacity="0.44" transform="rotate(144 120 120)"/>
+  <circle cx="120" cy="12" r="3"   fill="#B36B7A" opacity="0.36" transform="rotate(216 120 120)"/>
+  <circle cx="120" cy="12" r="3"   fill="#D4A3AD" opacity="0.36" transform="rotate(288 120 120)"/>
+
+  <!-- Outer accent dots -->
+  <circle cx="120" cy="3"  r="1.5" fill="#6F8F7B" opacity="0.22"/>
+  <circle cx="120" cy="3"  r="1.5" fill="#A3B898" opacity="0.18" transform="rotate(72  120 120)"/>
+  <circle cx="120" cy="3"  r="1.5" fill="#6F8F7B" opacity="0.18" transform="rotate(144 120 120)"/>
+  <circle cx="120" cy="3"  r="1.5" fill="#B36B7A" opacity="0.16" transform="rotate(216 120 120)"/>
+  <circle cx="120" cy="3"  r="1.5" fill="#D4A3AD" opacity="0.16" transform="rotate(288 120 120)"/>
+</svg>

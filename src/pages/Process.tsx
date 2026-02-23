@@ -65,7 +65,7 @@ export default function Process() {
         </div>
       </Section>
 
-      <Section bg="stone">
+      <Section bg="muted">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="mb-6">完全オンライン対応</h2>
           <p className="text-stone-500 leading-relaxed">

@@ -67,7 +67,7 @@ export default function Services() {
         </div>
       </Section>
 
-      <Section bg="stone">
+      <Section bg="muted">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="mb-6">代筆・出願代行は行いません</h2>
           <p className="text-stone-500 leading-relaxed">

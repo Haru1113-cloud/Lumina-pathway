@@ -1,6 +1,7 @@
 import Section from "../components/Section";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
+import aboutIllus from "../assets/about-illus.svg";
 
 export default function About() {
   return (
@@ -26,14 +27,17 @@ export default function About() {
           </div>
 
           <div>
-            <div className="aspect-[4/3] rounded-2xl border border-stone-200/80 bg-stone-50 flex items-center justify-center">
-              <p className="text-[13px] text-stone-300">Image Placeholder</p>
-            </div>
+            <img
+              src={aboutIllus}
+              alt=""
+              aria-hidden="true"
+              className="w-full rounded-2xl border border-stone-200/80 select-none"
+            />
           </div>
         </div>
       </Section>
 
-      <Section bg="stone">
+      <Section bg="muted">
         <div className="mx-auto max-w-3xl">
           <h2 className="mb-8 text-center">事業について</h2>
           <div className="space-y-6 text-[15px] text-stone-600 leading-[1.9]">

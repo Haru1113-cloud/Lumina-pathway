@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+  <!-- Background -->
+  <circle cx="36" cy="36" r="34" fill="#F2F5F0"/>
+  <circle cx="36" cy="36" r="34" stroke="#C5D3BC" stroke-width="1"/>
+
+  <!-- Compass outer ring -->
+  <circle cx="36" cy="36" r="20" stroke="#6F8F7B" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="36" cy="36" r="12" stroke="#A3B898" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- N pointer (primary — darker) -->
+  <path d="M36 36 L33 20 L36 12 L39 20 Z" fill="#6F8F7B" opacity="0.8"/>
+  <!-- S pointer -->
+  <path d="M36 36 L33 52 L36 60 L39 52 Z" fill="#A3B898" opacity="0.4"/>
+  <!-- E pointer -->
+  <path d="M36 36 L52 33 L60 36 L52 39 Z" fill="#6F8F7B" opacity="0.8"/>
+  <!-- W pointer -->
+  <path d="M36 36 L20 33 L12 36 L20 39 Z" fill="#A3B898" opacity="0.4"/>
+
+  <!-- Center jewel -->
+  <circle cx="36" cy="36" r="4.5" fill="#B36B7A" opacity="0.88"/>
+  <circle cx="36" cy="36" r="2"   fill="#9E5A69"/>
+</svg>

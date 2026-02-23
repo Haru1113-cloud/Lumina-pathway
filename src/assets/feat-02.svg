@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+  <!-- Background -->
+  <circle cx="36" cy="36" r="34" fill="#FBF5F6"/>
+  <circle cx="36" cy="36" r="34" stroke="#E5C7CD" stroke-width="1"/>
+
+  <!-- Document body -->
+  <rect x="16" y="12" width="30" height="40" rx="3" fill="white" stroke="#D4A3AD" stroke-width="1.5"/>
+  <!-- Folded corner -->
+  <path d="M36 12 L46 12 L46 22 L36 22 Z" fill="#F3E4E7"/>
+  <path d="M36 12 L46 22 L36 22 Z"        fill="white" stroke="#D4A3AD" stroke-width="1"/>
+
+  <!-- Text lines on document -->
+  <line x1="21" y1="29" x2="38" y2="29" stroke="#D4A3AD" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="21" y1="35" x2="38" y2="35" stroke="#D4A3AD" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="21" y1="41" x2="31" y2="41" stroke="#D4A3AD" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Sparkle / star accent -->
+  <path d="M54 22 L55.5 17 L57 22 L62 23.5 L57 25 L55.5 30 L54 25 L49 23.5 Z"
+        fill="#B36B7A" opacity="0.72"/>
+</svg>

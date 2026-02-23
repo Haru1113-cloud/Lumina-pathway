@@ -119,7 +119,7 @@ export default function Pricing() {
         </div>
       </Section>
 
-      <Section bg="stone">
+      <Section bg="muted">
         <div className="mx-auto max-w-2xl">
           <h2 className="mb-8 text-center">補足事項</h2>
           <ul className="space-y-4 text-[14px] leading-relaxed text-stone-500">

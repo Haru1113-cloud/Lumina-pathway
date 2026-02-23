@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" fill="none">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E0E7DB" stop-opacity="0.65"/>
+      <stop offset="65%" stop-color="#F2F5F0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FAFAF8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Soft background -->
+  <circle cx="285" cy="245" r="215" fill="url(#bgGlow)"/>
+
+  <!-- Globe outer ring -->
+  <circle cx="285" cy="245" r="158" stroke="#A3B898" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Latitude ellipses -->
+  <ellipse cx="285" cy="245" rx="158" ry="58"  stroke="#A3B898" stroke-width="1"   opacity="0.18"/>
+  <ellipse cx="285" cy="205" rx="143" ry="52"  stroke="#A3B898" stroke-width="0.8" opacity="0.13"/>
+  <ellipse cx="285" cy="285" rx="143" ry="52"  stroke="#A3B898" stroke-width="0.8" opacity="0.13"/>
+  <ellipse cx="285" cy="158" rx="108" ry="40"  stroke="#A3B898" stroke-width="0.6" opacity="0.09"/>
+  <ellipse cx="285" cy="332" rx="108" ry="40"  stroke="#A3B898" stroke-width="0.6" opacity="0.09"/>
+
+  <!-- Longitude ellipses + axes -->
+  <ellipse cx="285" cy="245" rx="60"  ry="158" stroke="#A3B898" stroke-width="1"   opacity="0.18"/>
+  <ellipse cx="285" cy="245" rx="108" ry="158" stroke="#A3B898" stroke-width="0.8" opacity="0.13"/>
+  <line x1="285" y1="87"  x2="285" y2="403" stroke="#A3B898" stroke-width="0.8" opacity="0.13"/>
+  <line x1="127" y1="245" x2="443" y2="245" stroke="#A3B898" stroke-width="0.8" opacity="0.13"/>
+
+  <!-- Compass rose outer ring -->
+  <circle cx="285" cy="245" r="30" stroke="#6F8F7B" stroke-width="1"   opacity="0.4"/>
+  <circle cx="285" cy="245" r="18" stroke="#6F8F7B" stroke-width="0.5" opacity="0.28"/>
+
+  <!-- N pointer (darker / longer) -->
+  <path d="M285 245 L281 216 L285 206 L289 216 Z" fill="#6F8F7B" opacity="0.78"/>
+  <!-- S pointer -->
+  <path d="M285 245 L281 274 L285 284 L289 274 Z" fill="#A3B898" opacity="0.44"/>
+  <!-- E pointer -->
+  <path d="M285 245 L314 241 L324 245 L314 249 Z" fill="#6F8F7B" opacity="0.78"/>
+  <!-- W pointer -->
+  <path d="M285 245 L256 241 L246 245 L256 249 Z" fill="#A3B898" opacity="0.44"/>
+
+  <!-- Center jewel -->
+  <circle cx="285" cy="245" r="6.5" fill="#B36B7A" opacity="0.88"/>
+  <circle cx="285" cy="245" r="3"   fill="#9E5A69"/>
+
+  <!-- Dashed flight arc -->
+  <path d="M128 362 Q198 138 432 312"
+        stroke="#B36B7A" stroke-width="1.5"
+        stroke-dasharray="5 8" stroke-linecap="round" opacity="0.4"/>
+  <!-- Arc endpoints -->
+  <circle cx="131" cy="360" r="4.5" fill="#D4A3AD" opacity="0.52"/>
+  <circle cx="429" cy="314" r="5"   fill="#B36B7A"  opacity="0.58"/>
+
+  <!-- Top-left constellation -->
+  <circle cx="88"  cy="93"  r="3"   fill="#B36B7A" opacity="0.62"/>
+  <circle cx="134" cy="70"  r="2"   fill="#B36B7A" opacity="0.42"/>
+  <circle cx="72"  cy="142" r="2.5" fill="#A3B898" opacity="0.55"/>
+  <circle cx="118" cy="158" r="2"   fill="#A3B898" opacity="0.4"/>
+  <line x1="88"  y1="93"  x2="134" y2="70"  stroke="#B36B7A" stroke-width="0.7" opacity="0.35"/>
+  <line x1="88"  y1="93"  x2="72"  y2="142" stroke="#A3B898" stroke-width="0.7" opacity="0.3"/>
+  <line x1="72"  y1="142" x2="118" y2="158" stroke="#A3B898" stroke-width="0.7" opacity="0.28"/>
+
+  <!-- Top-right constellation -->
+  <circle cx="464" cy="96"  r="2.5" fill="#B36B7A" opacity="0.5"/>
+  <circle cx="500" cy="70"  r="2"   fill="#B36B7A" opacity="0.38"/>
+  <circle cx="488" cy="138" r="2"   fill="#A3B898" opacity="0.46"/>
+  <line x1="464" y1="96"  x2="500" y2="70"  stroke="#B36B7A" stroke-width="0.7" opacity="0.3"/>
+  <line x1="464" y1="96"  x2="488" y2="138" stroke="#A3B898" stroke-width="0.7" opacity="0.28"/>
+
+  <!-- Bottom-left constellation -->
+  <circle cx="62"  cy="358" r="2"   fill="#A3B898" opacity="0.42"/>
+  <circle cx="98"  cy="398" r="2.5" fill="#6F8F7B" opacity="0.48"/>
+  <line x1="62" y1="358" x2="98" y2="398" stroke="#6F8F7B" stroke-width="0.7" opacity="0.28"/>
+
+  <!-- Bottom-right constellation -->
+  <circle cx="474" cy="384" r="2.5" fill="#A3B898" opacity="0.44"/>
+  <circle cx="510" cy="362" r="2"   fill="#A3B898" opacity="0.34"/>
+  <line x1="474" y1="384" x2="510" y2="362" stroke="#A3B898" stroke-width="0.7" opacity="0.28"/>
+
+  <!-- Botanical - bottom right -->
+  <line x1="448" y1="444" x2="494" y2="400" stroke="#6F8F7B" stroke-width="1.5" stroke-linecap="round" opacity="0.38"/>
+  <line x1="478" y1="434" x2="524" y2="390" stroke="#6F8F7B" stroke-width="1.2" stroke-linecap="round" opacity="0.28"/>
+  <ellipse cx="492" cy="415" rx="15" ry="7" fill="#A3B898" opacity="0.3"  transform="rotate(-42 492 415)"/>
+  <ellipse cx="520" cy="394" rx="13" ry="6" fill="#A3B898" opacity="0.24" transform="rotate(-55 520 394)"/>
+  <ellipse cx="462" cy="432" rx="12" ry="6" fill="#C5D3BC" opacity="0.26" transform="rotate(-28 462 432)"/>
+
+  <!-- Botanical - top left -->
+  <line x1="36"  y1="62" x2="78" y2="100" stroke="#6F8F7B" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <line x1="50"  y1="48" x2="88" y2="84"  stroke="#6F8F7B" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+  <ellipse cx="64" cy="74" rx="13" ry="6" fill="#A3B898" opacity="0.27" transform="rotate(42 64 74)"/>
+  <ellipse cx="80" cy="62" rx="11" ry="5" fill="#A3B898" opacity="0.22" transform="rotate(38 80 62)"/>
+</svg>

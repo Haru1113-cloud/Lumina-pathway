@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import SplashScreen from "./components/SplashScreen";
+import CustomCursor from "./components/CustomCursor";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
@@ -10,9 +13,15 @@ import FAQ from "./pages/FAQ";
 import Book from "./pages/Book";
 import Legal from "./pages/Legal";
 import Privacy from "./pages/Privacy";
+import Voice from "./pages/Voice";
 
 export default function App() {
+  const [splashDone, setSplashDone] = useState(false);
+
   return (
+    <>
+      <CustomCursor />
+      {!splashDone && <SplashScreen onComplete={() => setSplashDone(true)} />}
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +34,9 @@ export default function App() {
         <Route path="/book" element={<Book />} />
         <Route path="/legal" element={<Legal />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/voices/:id" element={<Voice />} />
       </Routes>
     </Layout>
+    </>
   );
 }

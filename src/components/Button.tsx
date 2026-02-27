@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import type { ReactNode } from "react";
+import type { ReactNode, MouseEvent } from "react";
 
 type ButtonProps = {
   children: ReactNode;
@@ -12,6 +12,24 @@ type ButtonProps = {
   onClick?: () => void;
 };
 
+function createRipple(e: MouseEvent<HTMLElement>) {
+  const el = e.currentTarget;
+  const rect = el.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height) * 1.8;
+  const x = e.clientX - rect.left - size / 2;
+  const y = e.clientY - rect.top - size / 2;
+
+  const ripple = document.createElement("span");
+  ripple.style.cssText = `
+    position:absolute;border-radius:50%;pointer-events:none;
+    width:${size}px;height:${size}px;left:${x}px;top:${y}px;
+    background:rgba(255,255,255,0.25);transform:scale(0);
+    animation:btn-ripple 0.55s ease-out forwards;
+  `;
+  el.appendChild(ripple);
+  setTimeout(() => ripple.remove(), 600);
+}
+
 export default function Button({
   children,
   to,
@@ -23,7 +41,7 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center font-sans font-medium tracking-normal transition-all duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 whitespace-nowrap disabled:opacity-50 disabled:pointer-events-none";
+    "relative overflow-hidden inline-flex items-center justify-center font-sans font-medium tracking-normal transition-all duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 whitespace-nowrap disabled:opacity-50 disabled:pointer-events-none";
 
   const variants = {
     primary:
@@ -44,13 +62,18 @@ export default function Button({
 
   const cls = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
 
+  const handleClick = (e: MouseEvent<HTMLElement>) => {
+    createRipple(e);
+    onClick?.();
+  };
+
   if (to && !disabled) {
-    return <Link to={to} className={cls}>{children}</Link>;
+    return <Link to={to} className={cls} onClick={handleClick}>{children}</Link>;
   }
 
   if (href && !disabled) {
-    return <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>{children}</a>;
+    return <a href={href} target="_blank" rel="noopener noreferrer" className={cls} onClick={handleClick}>{children}</a>;
   }
 
-  return <button onClick={onClick} disabled={disabled} className={cls}>{children}</button>;
+  return <button onClick={handleClick} disabled={disabled} className={cls}>{children}</button>;
 }

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Button from "./Button";
 import Container from "./Container";
+import ScrollProgress from "./ScrollProgress";
+import BackToTop from "./BackToTop";
 
 const CTA_LABEL = "60分で迷いを整理する（単発セッション）";
 
@@ -38,7 +40,7 @@ function Header() {
                 to={link.to}
                 className={({ isActive }) =>
                   `text-[13px] tracking-[0.04em] transition-colors duration-150 ${
-                    isActive ? "text-brand-text font-medium" : "text-stone-400 hover:text-stone-700"
+                    isActive ? "text-brand-text font-medium" : "text-stone-600 hover:text-stone-900"
                   }`
                 }
               >
@@ -156,9 +158,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <ScrollProgress />
       <Header />
-      <main className="flex-1">{children}</main>
+      <main key={location.pathname} className="flex-1 animate-page-in">
+        {children}
+      </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

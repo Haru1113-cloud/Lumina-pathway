@@ -44,6 +44,67 @@
   --font-sans: "Inter", "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
 }
 
+/* ── Page transition ── */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-page-in {
+  animation: page-in 0.4s ease both;
+}
+
+/* ── Button ripple ── */
+@keyframes btn-ripple {
+  to { transform: scale(1); opacity: 0; }
+}
+
+/* ── Gradient background (CTA) ── */
+@keyframes gradient-bg {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient-bg {
+  background: linear-gradient(135deg, #F5F3EF, #FBF5F6, #F2F5F0, #F5F3EF);
+  background-size: 300% 300%;
+  animation: gradient-bg 10s ease infinite;
+}
+
+/* ── Custom cursor ── */
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
+
+/* ── Marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Splash Screen ── */
+@keyframes splash-line-expand {
+  from { width: 0; opacity: 0; }
+  to   { width: 7rem; opacity: 1; }
+}
+@keyframes splash-logo-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.splash-line {
+  height: 1px;
+  background-color: #B36B7A;
+  animation: splash-line-expand 0.7s ease-out 0.3s both;
+}
+.splash-logo {
+  animation: splash-logo-in 0.7s ease-out 0.8s both;
+}
+
 @layer base {
   /* ── Base ── */
   html { scroll-behavior: smooth; }

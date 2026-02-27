@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import SplashScreen from "./components/SplashScreen";
-import CustomCursor from "./components/CustomCursor";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
@@ -20,8 +19,7 @@ export default function App() {
 
   return (
     <>
-      <CustomCursor />
-      {!splashDone && <SplashScreen onComplete={() => setSplashDone(true)} />}
+{!splashDone && <SplashScreen onComplete={() => setSplashDone(true)} />}
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />

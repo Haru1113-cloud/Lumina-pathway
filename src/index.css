@@ -70,11 +70,6 @@
   animation: gradient-bg 10s ease infinite;
 }
 
-/* ── Custom cursor ── */
-@media (pointer: fine) {
-  * { cursor: none !important; }
-}
-
 /* ── Marquee ── */
 @keyframes marquee {
   from { transform: translateX(0); }

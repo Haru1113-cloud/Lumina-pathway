@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <!-- Sky: sage-tinted gradient top → warm cream bottom -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#E0E7DB" stop-opacity="0.55"/>
+      <stop offset="55%"  stop-color="#F2F5F0" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FAFAF8"  stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Light glow at horizon -->
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#F3E4E7" stop-opacity="0.95"/>
+      <stop offset="35%"  stop-color="#E5C7CD" stop-opacity="0.55"/>
+      <stop offset="70%"  stop-color="#FBF5F6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FAFAF8"  stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base fill -->
+  <rect width="400" height="300" fill="#FAFAF8"/>
+  <rect width="400" height="300" fill="url(#skyGrad)"/>
+
+  <!-- Horizon glow (Lumina = light) -->
+  <ellipse cx="200" cy="178" rx="130" ry="65" fill="url(#glowGrad)" opacity="0.75"/>
+
+  <!-- Horizon line -->
+  <line x1="30" y1="178" x2="370" y2="178"
+        stroke="#C5D3BC" stroke-width="0.8" opacity="0.48"/>
+
+  <!-- Perspective path lines converging to the light -->
+  <path d="M120 300 Q162 238 200 178" stroke="#A3B898" stroke-width="1.2"   fill="none" opacity="0.42" stroke-linecap="round"/>
+  <path d="M280 300 Q238 238 200 178" stroke="#A3B898" stroke-width="1.2"   fill="none" opacity="0.42" stroke-linecap="round"/>
+  <path d="M60  300 Q138 248 200 178" stroke="#C5D3BC" stroke-width="0.8"   fill="none" opacity="0.3"  stroke-linecap="round"/>
+  <path d="M340 300 Q262 248 200 178" stroke="#C5D3BC" stroke-width="0.8"   fill="none" opacity="0.3"  stroke-linecap="round"/>
+  <path d="M0   280 Q115 248 200 178" stroke="#C5D3BC" stroke-width="0.5"   fill="none" opacity="0.2"  stroke-linecap="round"/>
+  <path d="M400 280 Q285 248 200 178" stroke="#C5D3BC" stroke-width="0.5"   fill="none" opacity="0.2"  stroke-linecap="round"/>
+
+  <!-- Light source — concentric rings -->
+  <circle cx="200" cy="178" r="26" fill="#F3E4E7" opacity="0.82"/>
+  <circle cx="200" cy="178" r="16" fill="#E5C7CD" opacity="0.78"/>
+  <circle cx="200" cy="178" r="9"  fill="#D4A3AD" opacity="0.85"/>
+  <circle cx="200" cy="178" r="4"  fill="#B36B7A" opacity="0.92"/>
+
+  <!-- Light rays -->
+  <line x1="200" y1="178" x2="200" y2="105" stroke="#D4A3AD" stroke-width="0.8" opacity="0.32" stroke-linecap="round"/>
+  <line x1="200" y1="178" x2="248" y2="125" stroke="#D4A3AD" stroke-width="0.7" opacity="0.25" stroke-linecap="round"/>
+  <line x1="200" y1="178" x2="152" y2="125" stroke="#D4A3AD" stroke-width="0.7" opacity="0.25" stroke-linecap="round"/>
+  <line x1="200" y1="178" x2="268" y2="152" stroke="#D4A3AD" stroke-width="0.5" opacity="0.18" stroke-linecap="round"/>
+  <line x1="200" y1="178" x2="132" y2="152" stroke="#D4A3AD" stroke-width="0.5" opacity="0.18" stroke-linecap="round"/>
+  <line x1="200" y1="178" x2="280" y2="168" stroke="#D4A3AD" stroke-width="0.4" opacity="0.14" stroke-linecap="round"/>
+  <line x1="200" y1="178" x2="120" y2="168" stroke="#D4A3AD" stroke-width="0.4" opacity="0.14" stroke-linecap="round"/>
+
+  <!-- Stars (upper sky) -->
+  <circle cx="75"  cy="52"  r="2"   fill="#B36B7A" opacity="0.52"/>
+  <circle cx="115" cy="36"  r="1.5" fill="#B36B7A" opacity="0.38"/>
+  <circle cx="160" cy="60"  r="1.5" fill="#A3B898" opacity="0.44"/>
+  <circle cx="48"  cy="88"  r="1.5" fill="#A3B898" opacity="0.36"/>
+  <circle cx="95"  cy="105" r="1"   fill="#A3B898" opacity="0.3"/>
+  <circle cx="305" cy="42"  r="2"   fill="#B36B7A" opacity="0.48"/>
+  <circle cx="338" cy="68"  r="1.5" fill="#A3B898" opacity="0.4"/>
+  <circle cx="278" cy="58"  r="1.5" fill="#A3B898" opacity="0.34"/>
+  <circle cx="355" cy="105" r="1.5" fill="#A3B898" opacity="0.3"/>
+  <circle cx="230" cy="42"  r="1"   fill="#C5D3BC" opacity="0.35"/>
+  <circle cx="175" cy="28"  r="1"   fill="#C5D3BC" opacity="0.3"/>
+
+  <!-- Constellation lines -->
+  <line x1="75"  y1="52"  x2="115" y2="36"  stroke="#B36B7A" stroke-width="0.6" opacity="0.28"/>
+  <line x1="75"  y1="52"  x2="48"  y2="88"  stroke="#A3B898" stroke-width="0.6" opacity="0.24"/>
+  <line x1="48"  y1="88"  x2="95"  y2="105" stroke="#A3B898" stroke-width="0.6" opacity="0.22"/>
+  <line x1="305" y1="42"  x2="278" y2="58"  stroke="#B36B7A" stroke-width="0.6" opacity="0.26"/>
+  <line x1="305" y1="42"  x2="338" y2="68"  stroke="#A3B898" stroke-width="0.6" opacity="0.24"/>
+
+  <!-- Botanical — left framing -->
+  <path d="M0 218 Q32 182 58 158"   stroke="#6F8F7B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.42"/>
+  <path d="M0 248 Q36 210 65 188"   stroke="#6F8F7B" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.32"/>
+  <!-- Sub-branches left -->
+  <path d="M32 188 Q18 168 14 152"  stroke="#6F8F7B" stroke-width="1"   stroke-linecap="round" fill="none" opacity="0.32"/>
+  <path d="M48 172 Q36 152 40 136"  stroke="#6F8F7B" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.25"/>
+  <!-- Leaves left -->
+  <ellipse cx="17"  cy="155" rx="11" ry="5.5" fill="#A3B898" opacity="0.33" transform="rotate(-32 17  155)"/>
+  <ellipse cx="38"  cy="140" rx="10" ry="5"   fill="#A3B898" opacity="0.27" transform="rotate(-46 38  140)"/>
+  <ellipse cx="55"  cy="164" rx="11" ry="5"   fill="#C5D3BC" opacity="0.3"  transform="rotate(-20 55  164)"/>
+  <ellipse cx="66"  cy="182" rx="9"  ry="4.5" fill="#C5D3BC" opacity="0.25" transform="rotate(-10 66  182)"/>
+
+  <!-- Botanical — right framing (mirrored) -->
+  <path d="M400 218 Q368 182 342 158"  stroke="#6F8F7B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.42"/>
+  <path d="M400 248 Q364 210 335 188"  stroke="#6F8F7B" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.32"/>
+  <path d="M368 188 Q382 168 386 152"  stroke="#6F8F7B" stroke-width="1"   stroke-linecap="round" fill="none" opacity="0.32"/>
+  <path d="M352 172 Q364 152 360 136"  stroke="#6F8F7B" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.25"/>
+  <!-- Leaves right -->
+  <ellipse cx="383" cy="155" rx="11" ry="5.5" fill="#A3B898" opacity="0.33" transform="rotate(32 383 155)"/>
+  <ellipse cx="362" cy="140" rx="10" ry="5"   fill="#A3B898" opacity="0.27" transform="rotate(46 362 140)"/>
+  <ellipse cx="345" cy="164" rx="11" ry="5"   fill="#C5D3BC" opacity="0.3"  transform="rotate(20 345 164)"/>
+  <ellipse cx="334" cy="182" rx="9"  ry="4.5" fill="#C5D3BC" opacity="0.25" transform="rotate(10 334 182)"/>
+
+  <!-- Soft ground plane -->
+  <ellipse cx="200" cy="290" rx="170" ry="18" fill="#E0E7DB" opacity="0.18"/>
+</svg>

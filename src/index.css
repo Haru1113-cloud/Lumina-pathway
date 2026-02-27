@@ -44,57 +44,59 @@
   --font-sans: "Inter", "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
 }
 
-/* ── Base ── */
-html { scroll-behavior: smooth; }
+@layer base {
+  /* ── Base ── */
+  html { scroll-behavior: smooth; }
 
-body {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-size: 15px;
-  color: var(--color-brand-text);
-  background-color: var(--color-brand-bg);
-  line-height: 1.8;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "palt";
-}
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    color: var(--color-brand-text);
+    background-color: var(--color-brand-bg);
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "palt";
+  }
 
-/* ── Headings ── */
-h1, h2, h3, h4 {
-  font-family: var(--font-serif);
-  font-weight: 500;
-  color: var(--color-brand-text);
-  letter-spacing: 0.04em;
-  line-height: 1.35;
-  margin: 0;
-}
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.625rem; }
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1.125rem; }
+  /* ── Headings ── */
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    color: var(--color-brand-text);
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    margin: 0;
+  }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.625rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.125rem; }
 
-@media (min-width: 768px) {
-  h1 { font-size: 3rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.375rem; }
-}
+  @media (min-width: 768px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.375rem; }
+  }
 
-/* ── Text ── */
-p { margin: 0; color: var(--color-stone-600); line-height: 1.9; }
-small { font-size: 0.8125rem; color: var(--color-stone-400); }
-a { color: inherit; text-decoration: none; }
+  /* ── Text ── */
+  p { margin: 0; color: var(--color-stone-600); line-height: 1.9; }
+  small { font-size: 0.8125rem; color: var(--color-stone-400); }
+  a { color: inherit; text-decoration: none; }
 
-/* ── Focus ── */
-*:focus-visible {
-  outline: 2px solid var(--color-brand-primary);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
+  /* ── Focus ── */
+  *:focus-visible {
+    outline: 2px solid var(--color-brand-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 
-/* ── Selection ── */
-::selection {
-  background-color: var(--color-rose-100);
-  color: var(--color-brand-text);
+  /* ── Selection ── */
+  ::selection {
+    background-color: var(--color-rose-100);
+    color: var(--color-brand-text);
+  }
 }

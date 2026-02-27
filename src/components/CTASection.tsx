@@ -12,7 +12,7 @@ export default function CTASection() {
           無理な勧誘は一切ありません。
         </p>
         <div>
-          <Button to="/book" size="lg">
+          <Button to="/book" size="lg" className="!text-[#111827]">
             60分で迷いを整理する（単発セッション）
           </Button>
           <p className="mt-3 text-[12px] text-stone-400">完全オンライン・枠数限定</p>

@@ -1,0 +1,73 @@
+{
+  "global": {
+    "color": {
+      "brand": {
+        "bg":           { "value": "#FAFAF8", "type": "color", "description": "ページ背景" },
+        "text":         { "value": "#111827", "type": "color", "description": "本文テキスト" },
+        "border":       { "value": "#E7E5E4", "type": "color", "description": "ボーダー" },
+        "primary":      { "value": "#B36B7A", "type": "color", "description": "メインアクセント（ローズ）" },
+        "primaryHover": { "value": "#9E5A69", "type": "color", "description": "プライマリホバー" },
+        "secondary":    { "value": "#6F8F7B", "type": "color", "description": "セカンダリアクセント（セージ）" }
+      },
+      "stone": {
+        "50":  { "value": "#FAFAF8", "type": "color" },
+        "100": { "value": "#F5F3EF", "type": "color" },
+        "200": { "value": "#E7E5E4", "type": "color" },
+        "300": { "value": "#D6D3D1", "type": "color" },
+        "400": { "value": "#A8A29E", "type": "color" },
+        "500": { "value": "#78716C", "type": "color" },
+        "600": { "value": "#57534E", "type": "color" },
+        "700": { "value": "#44403C", "type": "color" },
+        "800": { "value": "#292524", "type": "color" },
+        "900": { "value": "#1C1917", "type": "color" }
+      },
+      "sage": {
+        "50":  { "value": "#F2F5F0", "type": "color" },
+        "100": { "value": "#E0E7DB", "type": "color" },
+        "200": { "value": "#C5D3BC", "type": "color" },
+        "300": { "value": "#A3B898", "type": "color" },
+        "400": { "value": "#6F8F7B", "type": "color" },
+        "500": { "value": "#5A7A66", "type": "color" },
+        "600": { "value": "#476350", "type": "color" }
+      },
+      "rose": {
+        "50":  { "value": "#FBF5F6", "type": "color" },
+        "100": { "value": "#F3E4E7", "type": "color" },
+        "200": { "value": "#E5C7CD", "type": "color" },
+        "300": { "value": "#D4A3AD", "type": "color" },
+        "400": { "value": "#B36B7A", "type": "color" },
+        "500": { "value": "#9E5A69", "type": "color" },
+        "600": { "value": "#844A58", "type": "color" }
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "serif": { "value": "Cormorant Garamond, 游明朝, Yu Mincho, Hiragino Mincho ProN, serif", "type": "fontFamilies" },
+        "sans":  { "value": "Inter, 游ゴシック体, Yu Gothic, Hiragino Kaku Gothic ProN, system-ui, sans-serif", "type": "fontFamilies" }
+      },
+      "fontSize": {
+        "base":    { "value": "15",   "type": "fontSizes" },
+        "sm":      { "value": "13",   "type": "fontSizes" },
+        "h4":      { "value": "18",   "type": "fontSizes" },
+        "h3":      { "value": "20",   "type": "fontSizes" },
+        "h3-md":   { "value": "22",   "type": "fontSizes" },
+        "h2":      { "value": "26",   "type": "fontSizes" },
+        "h2-md":   { "value": "32",   "type": "fontSizes" },
+        "h1":      { "value": "36",   "type": "fontSizes" },
+        "h1-md":   { "value": "48",   "type": "fontSizes" }
+      },
+      "lineHeight": {
+        "body":    { "value": "1.9",  "type": "lineHeights" },
+        "heading": { "value": "1.35", "type": "lineHeights" }
+      },
+      "letterSpacing": {
+        "body":    { "value": "0.02em", "type": "letterSpacing" },
+        "heading": { "value": "0.04em", "type": "letterSpacing" }
+      },
+      "fontWeight": {
+        "regular": { "value": "400", "type": "fontWeights" },
+        "medium":  { "value": "500", "type": "fontWeights" }
+      }
+    }
+  }
+}

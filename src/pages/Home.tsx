@@ -2,7 +2,8 @@ import Section from "../components/Section";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import CTASection from "../components/CTASection";
-import heroIllus from "../assets/hero-illus.svg";
+import Container from "../components/Container";
+import heroPhoto from "../assets/hero-photo.png";
 import valuesIllus from "../assets/values-illus.svg";
 import feat01 from "../assets/feat-01.svg";
 import feat02 from "../assets/feat-02.svg";
@@ -38,40 +39,43 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <Section className="!py-28 md:!py-36">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="max-w-xl">
-            <p className="mb-4 text-[13px] font-medium tracking-[0.15em] text-sage-500 uppercase">
-              海外大学院・キャリア支援
-            </p>
-            <h1 className="mb-7">
-              自分の意思で、
-              <br />
-              世界を選ぶ力を。
-            </h1>
-            <p className="mb-12 text-base leading-relaxed text-stone-500 md:text-lg">
-              Lumina Pathwaysは、海外大学院進学や海外キャリアを目指す女性のための意思決定伴走サービスです。情報提供や代行ではなく、「主体的に選ぶ力」を育てます。
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Button to="/book" size="lg">
-                60分 単発セッションを予約
-              </Button>
-              <Button to="/services" variant="outline" size="lg">
-                サービスを見る
-              </Button>
-            </div>
-          </div>
-
-          <div className="hidden lg:flex lg:justify-center">
-            <img
-              src={heroIllus}
-              alt=""
-              aria-hidden="true"
-              className="w-full max-w-[460px] select-none"
-            />
-          </div>
+      <section className="relative flex min-h-[calc(100vh-73px)] items-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroPhoto}
+            alt=""
+            aria-hidden="true"
+            className="h-full w-full object-cover object-[65%_15%]"
+          />
+          <div className="absolute inset-0 bg-black/[.34]" />
         </div>
-      </Section>
+        <Container className="relative z-10 py-28 md:py-36">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <div className="max-w-xl">
+              <p className="mb-4 text-[13px] font-medium tracking-[0.15em] uppercase text-white">
+                海外大学院・キャリア支援
+              </p>
+              <h1 className="mb-6 text-white">
+                自分の意思で、
+                <br />
+                世界を選ぶ力を。
+              </h1>
+              <p className="mb-10 text-lg leading-[1.9] text-white">
+                Lumina Pathwaysは、海外大学院進学や海外キャリアを目指す女性のための意思決定伴走サービスです。
+              </p>
+              <div className="flex flex-wrap items-center gap-4">
+                <Button to="/book" size="lg">
+                  60分 単発セッションを予約
+                </Button>
+                <Button to="/services" size="lg" className="!bg-[#e1e1e1] !text-[#111827] hover:!bg-[#d4d4d4]">
+                  サービスを見る
+                </Button>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </section>
 
       {/* Values */}
       <Section bg="muted">

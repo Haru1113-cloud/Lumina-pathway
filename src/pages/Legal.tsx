@@ -4,8 +4,9 @@ import PageHeader from "../components/PageHeader";
 const rows = [
   { label: "事業者名", value: "Lumina Pathways" },
   { label: "代表者", value: "（氏名を記載）" },
-  { label: "所在地", value: "（住所を記載）" },
-  { label: "連絡先", value: "（メールアドレスを記載）" },
+  { label: "所在地", value: "請求があれば遅滞なく開示いたします" },
+  { label: "電話番号", value: "請求があれば遅滞なく開示いたします" },
+  { label: "メールアドレス", value: "info@lumina-pathways.com" },
   {
     label: "サービス内容",
     value:

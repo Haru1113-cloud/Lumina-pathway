@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import Card from "../components/Card";
 import CTASection from "../components/CTASection";
 import Container from "../components/Container";
-import TestimonialCarousel from "../components/TestimonialCarousel";
 import FadeIn from "../components/FadeIn";
 import heroPhoto from "../assets/hero-photo.png";
 import valuesIllus from "../assets/values-illus.svg";
@@ -154,8 +153,6 @@ export default function Home() {
           </div>
         </Container>
       </section>
-
-      <TestimonialCarousel />
 
       {/* Values */}
       <Section bg="muted">

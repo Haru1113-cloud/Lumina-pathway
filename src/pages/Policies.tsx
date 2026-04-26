@@ -2,14 +2,65 @@ import Section from "../components/Section";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
 
+const terms = [
+  {
+    title: "第1条（適用）",
+    body: "本規約は当サービスの利用に適用されます。",
+  },
+  {
+    title: "第2条（利用対象）",
+    body: "本サービスは女性を対象とし、条件を満たさない場合は利用をお断りすることがあります。",
+  },
+  {
+    title: "第3条（サービス内容）",
+    body: "キャリア・進学・学び直しにおける意思決定支援サービスを提供します。",
+  },
+  {
+    title: "第4条（契約成立）",
+    body: "申込および決済完了時点で契約成立とします。本サービスは事前予約制のコンサルティングサービスであり、特定商取引法に基づくクーリングオフ制度の対象外です。本サービスはデジタルコンサルティングサービスの性質上、提供開始後の返金には原則として応じません（別途キャンセルポリシーに従います）。",
+  },
+  {
+    title: "第5条（料金）",
+    body: "利用者は所定の料金を支払うものとします。",
+  },
+  {
+    title: "第6条（セッション提供）",
+    body: "予約確定日時にオンラインにて提供します。",
+  },
+  {
+    title: "第7条（キャンセル）",
+    body: "キャンセルポリシーに従います。サービス開始72時間前まで全額返金／48〜24時間前は50％返金／24時間以内および無断キャンセルは返金不可。",
+  },
+  {
+    title: "第8条（禁止事項）",
+    body: "虚偽申告、運営妨害、その他不適切と判断される行為を禁止します。",
+  },
+  {
+    title: "第9条（免責）",
+    body: "本サービスは結果保証を行いません。",
+  },
+  {
+    title: "第10条（変更・停止）",
+    body: "サービス内容は予告なく変更・停止する場合があります。",
+  },
+  {
+    title: "第11条（規約変更）",
+    body: "本規約は変更される場合があります。",
+  },
+  {
+    title: "第12条（準拠法）",
+    body: "日本法に準拠します。",
+  },
+];
+
 export default function Policies() {
   return (
     <>
       <Section>
         <div className="mx-auto max-w-3xl">
-          <PageHeader label="Policies" title="運営ポリシー" />
+          <PageHeader label="Policies" title="運営ポリシー・利用規約" />
 
-          <div className="space-y-14 text-[15px] text-stone-600 leading-[1.9]">
+          <div className="space-y-14 text-[15px] text-stone-600 leading-[1.95]">
             <div>
               <h2 className="mb-6">サービス提供の基本方針</h2>
               <ul className="space-y-4">
@@ -26,64 +77,39 @@ export default function Policies() {
                 <li className="flex items-start gap-3">
                   <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
                   <span>
-                    文章の代筆・出願手続きの代行は行いません。「自分の言葉で語れる」状態をつくる伴走を行います。
+                    出願代行・文章の代筆・代理作成は行いません。「自分の言葉で語れる」状態をつくる伴走を行います。
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
                   <span>
-                    サービス品質維持のため、サポート範囲と時間を明確に定義しています。
+                    依存的な支援ではなく、意思決定そのものの力を育てることを目的としています。
                   </span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-6">セッション外での質問対応について</h2>
+              <h2 className="mb-6">キャンセル・返金ポリシー</h2>
               <p className="mb-5">
-                Lumina Pathwaysでは、サービスの質と継続性を保つため、セッション外での質問対応について明確なルールを設けています。
+                サービス開始前のキャンセルは以下の通り対応します。
               </p>
-              <ul className="mb-8 space-y-4">
+              <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
-                  <span>
-                    原則として、セッション時間内での対応を基本とします。
-                  </span>
+                  <span>72時間前まで：全額返金</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
-                  <span>
-                    セッション外での質問対応は、質問対応付きプランを契約している場合のみ提供します。
-                  </span>
+                  <span>48〜24時間前：50％返金</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
+                  <span>24時間以内・無断キャンセル：返金不可</span>
                 </li>
               </ul>
-              <div className="rounded-2xl border border-stone-200/80 bg-stone-50/50 p-7">
-                <h4 className="mb-4 text-stone-800">
-                  質問対応付きプランの内容
-                </h4>
-                <ul className="space-y-3 text-[14px]">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-[7px] block h-1 w-1 flex-shrink-0 rounded-full bg-stone-400" />
-                    <span>各セッション前後3日間の質問対応</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-[7px] block h-1 w-1 flex-shrink-0 rounded-full bg-stone-400" />
-                    <span>最大5件までの質問対応</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-[7px] block h-1 w-1 flex-shrink-0 rounded-full bg-stone-400" />
-                    <span>
-                      対応方法はテキストベース（メール・指定ツール）
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-[7px] block h-1 w-1 flex-shrink-0 rounded-full bg-stone-400" />
-                    <span>即時返信は保証しません</span>
-                  </li>
-                </ul>
-              </div>
-              <p className="mt-6 text-[14px] text-stone-500">
-                これにより、クライアントがセッション内で主体的に思考・整理を行うことを重視しつつ、必要なタイミングでの補足サポートを可能としています。時間外質問対応は、依存を生まない健全な伴走関係を維持するための仕組みです。
+              <p className="mt-5 text-[14px] text-stone-500">
+                ※ 天災等の不可抗力の場合は個別対応します。返金は指定口座への振込にて対応します。
               </p>
             </div>
 
@@ -92,7 +118,11 @@ export default function Policies() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
-                  <span>高単価・少人数制による品質重視の運営</span>
+                  <span>完全予約制・枠数限定による品質重視の運営</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
+                  <span>セッション外対応は限定プランのみ対応</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-[10px] block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300" />
@@ -101,6 +131,22 @@ export default function Policies() {
                   </span>
                 </li>
               </ul>
+            </div>
+
+            <div>
+              <h2 className="mb-6">利用規約</h2>
+              <div className="space-y-6">
+                {terms.map((t) => (
+                  <div key={t.title}>
+                    <h3 className="mb-2 font-serif text-[1.05rem] text-stone-800">
+                      {t.title}
+                    </h3>
+                    <p className="text-[14px] leading-[1.85] text-stone-500">
+                      {t.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

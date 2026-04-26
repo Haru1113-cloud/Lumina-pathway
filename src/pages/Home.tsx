@@ -27,7 +27,7 @@ const values = [
   },
   {
     title: "Empowerment",
-    desc: "依存させず、自分で決める力を育てる。",
+    desc: "依存ではなく、自分で決める力を育てる。",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
         <path d="M12 22V12" />
@@ -38,7 +38,7 @@ const values = [
   },
   {
     title: "Integrity",
-    desc: "誠実で透明性のあるサポートを提供する。",
+    desc: "誠実で透明性のあるサポート。",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
         <path d="M12 2l2.5 7H22l-6 4.5 2.3 7L12 17l-6.3 3.5L8 13 2 8.5h7.5z" />
@@ -47,7 +47,7 @@ const values = [
   },
   {
     title: "Elegance",
-    desc: "女性向け・海外キャリアにふさわしい洗練。",
+    desc: "女性のキャリアにふさわしい洗練された体験設計。",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
         <path d="M12 2c0 4-3 6-3 9a3 3 0 0 0 6 0c0-3-3-5-3-9z" />
@@ -59,7 +59,7 @@ const values = [
   },
   {
     title: "Flexibility",
-    desc: "一人ひとりの背景やペースを尊重する。",
+    desc: "背景や人生状況に応じた柔軟な支援。",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
         <path d="M2 12c2-4 4-6 6-6s4 4 6 4 4-6 6-6" />
@@ -72,18 +72,18 @@ const values = [
 const features = [
   {
     icon: feat01,
-    title: "意思決定の整理",
-    desc: "進学先選び・キャリアの方向性など、複雑な選択肢を構造化し、あなた自身が納得できる判断を導きます。",
+    title: "キャリア・進学の戦略設計",
+    desc: "海外キャリア・海外大学院・学び直しを横断し、複雑な選択肢を整理。「どの環境で、どうキャリアを築くか」という意思決定そのものを言語化します。",
   },
   {
     icon: feat02,
-    title: "SOP・CV の方向性設計",
-    desc: "Statement of Purposeやレジュメの核となるストーリーを、ゼロの段階から一緒に構築します。代筆ではなく「自分の言葉」で語れる状態を目指します。",
+    title: "SOP・CV の構造設計",
+    desc: "Statement of Purposeやレジュメの核となるストーリーを、ゼロの段階から一緒に構築。代筆ではなく「自分の言葉」で語れる状態を目指します。",
   },
   {
     icon: feat03,
-    title: "出願戦略の壁打ち",
-    desc: "出願校の選定、スケジュール管理、面接準備まで、戦略的に伴走します。",
+    title: "出願戦略・奨学金支援",
+    desc: "出願校選定からスケジュール管理、面接準備、奨学金戦略までを一貫して伴走。資金戦略を含めた現実的な意思決定を支えます。",
   },
 ];
 
@@ -130,19 +130,19 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="max-w-xl">
               <p className="mb-4 text-[13px] font-medium tracking-[0.15em] uppercase text-white">
-                海外大学院・キャリア支援
+                グローバルキャリア意思決定支援
               </p>
               <h1 className="mb-6 text-white">
-                自分の意思で、
+                正解を選ぶのではなく、
                 <br />
-                世界を選ぶ力を。
+                自分で選べる状態をつくる。
               </h1>
               <p className="mb-10 text-lg leading-[1.9] text-white">
-                Lumina Pathwaysは、海外大学院進学や海外キャリアを目指す女性のための意思決定伴走サービスです。
+                Lumina Pathwaysは、海外キャリア・海外大学院進学・学び直しを横断し、女性が自分の意思で進路を選べる状態を伴走でつくる意思決定支援サービスです。
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Button to="/book" size="lg">
-                  60分 単発セッションを予約
+                  60分 単発セッション（¥22,000）
                 </Button>
                 <Button to="/services" size="lg" className="!bg-[#e1e1e1] !text-[#111827] hover:!bg-[#d4d4d4]">
                   サービスを見る
@@ -230,8 +230,9 @@ export default function Home() {
             </thead>
             <tbody className="text-stone-600">
               {[
-                ["出願代行", "あり", "なし（主体性を重視）"],
-                ["主体性", "低くなりがち", "高い"],
+                ["対象領域", "進学手続きが中心", "キャリア・学び・人生を横断"],
+                ["スタンス", "代行・添削が中心", "意思決定支援が中心"],
+                ["出願代行・代筆", "あり", "なし（主体性を重視）"],
                 ["女性特化", "なし", "あり"],
                 ["サポート形式", "事務的", "伴走型"],
               ].map(([label, general, lumina], i, arr) => (

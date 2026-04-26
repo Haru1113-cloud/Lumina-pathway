@@ -14,9 +14,9 @@ export default function CTASection() {
           </p>
           <div>
             <Button to="/book" size="lg">
-              60分で迷いを整理する（単発セッション）
+              60分 単発セッション（¥22,000）を予約
             </Button>
-            <p className="mt-3 text-[12px] text-stone-400">完全オンライン・枠数限定</p>
+            <p className="mt-3 text-[12px] text-stone-400">完全オンライン・予約制</p>
           </div>
         </div>
       </Container>

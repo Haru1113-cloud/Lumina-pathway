@@ -5,7 +5,7 @@ import Container from "./Container";
 import ScrollProgress from "./ScrollProgress";
 import BackToTop from "./BackToTop";
 
-const CTA_LABEL = "60分で迷いを整理する（単発セッション）";
+const CTA_LABEL = "60分 単発セッション（¥22,000）";
 
 const navLinks = [
   { to: "/services", label: "サービス" },
@@ -119,7 +119,7 @@ function Footer() {
                 Lumina Pathways
               </Link>
               <p className="mt-3 max-w-xs text-[13px] leading-relaxed text-stone-400">
-                女性が自分の力で世界に挑戦できる社会を創る。
+                女性が自分の意思で世界を舞台にキャリアを築ける社会を創る。
               </p>
             </div>
             <div className="flex flex-wrap gap-x-16 gap-y-8">
